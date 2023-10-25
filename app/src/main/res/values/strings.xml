@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">NBA Players Wiki</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="season_year_title">Season year:</string>
+    <string name="games_played_title">Games played:</string>
+    <string name="points_title">Points:</string>
+    <string name="first_name_title">First name:</string>
+    <string name="last_name_title">Last name:</string>
+    <string name="position_title">Position:</string>
+    <string name="height_feet_title">Height Feet:</string>
+    <string name="height_inches_title">Height Inches:</string>
+    <string name="weight_title">Weight:</string>
+    <string name="team_full_name_title">Team Full Name:</string>
+    <string name="team_city_title">Team City:</string>
+    <string name="team_conference_title">Team Conference:</string>
+    <string name="team_division_title">Team Division:</string>
+    <string name="more_details_btn">More Details</string>
+    <string name="players_bottom_nav">Players</string>
+    <string name="about_bottom_nav">About</string>
+    <string name="status_of_api_call">Status of API call</string>
+    <string name="unknown">unknown</string>
+    <string name="search_for_a_player">Search for a player ...</string>
+</resources>

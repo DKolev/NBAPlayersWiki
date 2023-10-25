@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="player"
+            type="com.example.nbaplayerswiki.model.Player" />
+    </data>
+    <LinearLayout
+        android:id="@+id/player_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:background="?android:attr/selectableItemBackground">
+        <TextView
+            android:id="@+id/first_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="34sp"
+            app:firstName="@{player.firstName}"/>
+        <TextView
+            android:id="@+id/last_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="34sp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            app:lastName="@{player.lastName}"/>
+    </LinearLayout>
+</layout>

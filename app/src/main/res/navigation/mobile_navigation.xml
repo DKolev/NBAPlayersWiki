@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.nbaplayerswiki.ui.home.HomeFragment"
+        android:label="Players"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_player_details"
+            app:destination="@id/navigation_player_details" />
+        <argument
+            android:name="playerId"
+            app:argType="integer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_player_details"
+        android:name="com.example.nbaplayerswiki.ui.playerDetails.PlayerDetailsFragment"
+        android:label="Player Details"
+        tools:layout="@layout/fragment_player_details" >
+        <argument
+            android:name="playerId"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_navigation_player_details_to_navigation_player_more_details"
+            app:destination="@id/navigation_player_more_details" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_player_more_details"
+        android:name="com.example.nbaplayerswiki.ui.playerDetails.MorePlayerDetailsFragment"
+        android:label="Season Averages"
+        tools:layout="@layout/fragment_more_player_details" >
+        <argument
+            android:name="playerId"
+            app:argType="integer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_about"
+        android:name="com.example.nbaplayerswiki.ui.about.AboutFragment"
+        android:label="About"
+        tools:layout="@layout/fragment_about" />
+</navigation>
